@@ -1,0 +1,7 @@
+.post {
+    width: 20em;
+    height: 10em;
+    color: #fff;
+    background-color: blue;
+    box-shadow: 1px 4px 8px 1px rgba(255, 255, 255, 0.8);
+}
