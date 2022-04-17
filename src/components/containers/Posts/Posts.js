@@ -8,7 +8,10 @@ const Posts = (props) => {
     const fetchPosts = () => {
         axios.get('http://localhost:8080/api/v1/posts')
         .then((response) => {
+            //console.log('Get Posts: ', response.data);
             setPosts(response.data);
+        }).catch( (err) => {
+            console.log(err.message);
         })
     };
 

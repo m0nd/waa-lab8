@@ -6,6 +6,14 @@ const getPosts = () => axios.get(`${postsApi}`);
 
 const getPostById = (postId) => axios.get(`${postsApi}/${postId}`);
 
+const savePost = (postData) => axios.post(`${postsApi}`, postData);
+
 const deletePostById = (postId) => axios.delete(`${postsApi}/${postId}`);
 
-export {getPosts, getPostById, deletePostById}
+const apiService = {
+    getPosts, 
+    getPostById, 
+    deletePostById, 
+    savePost
+};
+export default apiService;
